@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+
+import { Image } from "astro:assets";
+import html5 from "../assets/html5.svg";
+import css3 from "../assets/css3.svg";
+import js from "../assets/js.svg";
+import tailwindcss from "../assets/tailwindcss.svg";
+import astro from "../assets/astro.svg";
+import ButtonWork from "./ButtonWork.astro";
+
+---
+<section id="about">
+<div class="w-screen h-fit p-10 md:pt-36 md:pr-36 md:pl-36 flex flex-col content-center justify-center items-center md:flex-row-reverse md:shrink-0 md:h-fit md:justify-between md:items-start md:content-center">
+        
+    <div class="md:w-1/2 mb-8 md:mb-0">
+        <p class="p-header font-normal md:font-normal text-neutral-200 text-[15px] md:text-[18px] tracking-widest md:tracking-widest">About</p>
+        <h1 class="mb-4 text-neutral-200 text-[30px] md:text-[50px] font-bold md:font-bold">Sobre mí</h1>
+        <p class="mb-6 text-neutral-500 justify traking-wider md:tracking-wider text-[16px] md:text-[16px] md:text-justify leading-8 md:leading-8">
+        Desarrolladora full stack con enfoque en frontend, uniendo creatividad y técnica para crear interfaces atractivas y responsivas, siempre alineada con las últimas tendencias y herramientas.<br>
+        </p>
+    </div>
+    <div class="gap-8 flex flex-col md:flex-row md:gap-5 md:p-8 pr-16 pl-16 pb-6 pt-6 rounded ">
+    
+        <div class="flex flex-row justify-center gap-8 ">
+          <img src="/src/assets/html5.svg" alt="logo html5" class="img-header w-8 h-8 object-cover" />
+          <img src="/src/assets/css3.svg" alt="logo css3" class="img-header w-8 h-8 object-cover" />
+          <img src="/src/assets/js.svg" alt="logo javascript" class="img-header w-8 h-8 object-cover" />
+      </div>
+      <div class="flex flex-row justify-center gap-8 ">
+          <img src="/src/assets/tailwindcss.svg" alt="logo tailwind" class="img-header h-4 object-cover" />
+          <img src="/src/assets/python.png" alt="logo python" class="img-header h-8 object-cover" />
+          <img src="/src/assets/astro.svg" alt="logo astro" class="img-header h-8 object-cover" />
+      </div>   
+    </div>        
+    
+</div>
+</section>
+
+<style>
+    *{
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+ 
+</style>

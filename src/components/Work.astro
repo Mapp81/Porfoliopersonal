@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import reta from "../assets/reta.png";
+import salemi from "../assets/salemi.png";
+import Home from "../assets/Home.png";
+---
+
+<section id="Work">
+<div class="md:pr-36 md:pl-36 p-10 container-header flex flex-col md:flex md:flex-col md:shrink-0 md:gap-20">
+    <div class="md:justify-start md:items-start">
+        <p class="p-header font-normal md:font-normal text-neutral-200 text-[15px] md:text-[18px] tracking-widest md:tracking-widest">Proyectos</p>
+        <h1 class=" text-neutral-200 text-[30px] md:text-[50px] font-bold md:font-bold">Sitios Web</h1>    
+    </div>   
+</div>
+<div class="w-screen pt-4 p-10 md:pt-4 md:pr-36 md:pl-36 h-fit grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 md:place-items-center gap-8">
+    <div class="card rounded">
+        <a href="https://balnearioreta.netlify.app/"><Image src={reta} alt={"Reta"} class="w-[600px] h-[300px] object-cover object-left-top" ></a>
+        <div class="texto-superpuesto place-content-center text-neutral-200 font-bold text-[18px] place-items-center tracking-widest">
+            <p>Sitio web turístico</p>
+        </div>
+    </div>
+   <div class="card rounded">
+        <a href="https://logistica-salemi-2025-production.up.railway.app/"><Image src={salemi} alt={"Logistica Salemi"} class="w-[600px] h-[300px] object-cover object-left-top" ></a>
+         <div class="texto-superpuesto place-content-center text-neutral-200 font-bold text-[18px] place-items-center tracking-widest">
+            <p>Sitio web empresa</p>
+        </div>   
+    </div>
+    <div class="card rounded">
+        <a href="https://home-organization-production.up.railway.app/"><Image src={Home} alt={"Reta"} class="w-[600px] h-[300px] object-cover object-left-top" ></a>
+        <div class="texto-superpuesto place-content-center text-neutral-200 font-bold text-[18px] place-items-center tracking-widest">
+            <p>Blog personal</p>
+        </div>     
+    </div>
+</div>
+
+
+<style>
+    *{
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    .texto-superpuesto {
+        position: absolute;
+        transform: translate(-0%, -100%);
+        background-color: rgba(0, 0, 0, 0.5);
+}    
+   
+</style>

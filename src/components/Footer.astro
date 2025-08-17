@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import instagram from "../assets/instagram.svg";
+import discord from "../assets/discord.svg";
+import github from "../assets/github.svg";
+
+---
+
+<footer class=" text-white py-4">
+  <div class="container mx-auto text-center ">
+    <div class="p-5 place-items-end flex flex-row md:flex-row justify-end gap-5 md:place-items-end">
+        <a href=""><Image src={instagram} alt="Instagram" class="w-[30px]"></a>
+        <a href="https://discord.com/users/mapp81_81"><Image src={discord} alt="Discord" class="w-[30px]"></a>
+        <a href="https://github.com/mapp81" ><Image src={github} alt="Github" class="w-[30px]"></a>
+    </div>
+  </div>
+
+  <style>
+
+*{
+  font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+  </style>

@@ -1,0 +1,10 @@
+---
+const { label = "Button", href = "#", download = "" } = Astro.props;
+---
+
+<a {href} download={download ? true : undefined}>
+<button class="w-28 h-10 md:w-44 md:h-12 text-sky-200 text-center text-[12px] border-2 border-sky-200 rounded-full shadow-[0_0_1px_#fff,inset_0_0_3px_#08f,0_0_5px_#08f,0_0_10px_#08f,0_0_15px_#08f] hover:shadow-[0_0_1px_#fff,inset_0_0_3px_#08f,0_0_5px_#08f,0_0_10px_#08f,0_0_25px_#08f] transition-all duration-300 ease-in-out md:text-[15px] md:font-light font-light tracking-widest md:tracking-widest cursor-pointer"
+    >
+{label}
+</button>
+</a>

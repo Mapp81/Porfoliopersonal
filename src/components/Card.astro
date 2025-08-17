@@ -1,0 +1,26 @@
+---
+import Image from "astro/components/Image.astro";
+
+const { img, alt, title, description, width, height } = Astro.props;
+
+
+
+---
+
+<section>
+    <div class="p-8 w-[250px] h-[180px]  border-2 rounded-2xl border-neutral-200 flex flex-col justify-center items-center md:flex md:flex-col md:shrink-0 md:rounded md:justify-center md:items-center text-center md:hover:mix-blend-plus-lighter hover:shadow-[0_0_1px_#fff,inset_0_0_3px_#08f,0_0_5px_#08f,0_0_10px_#08f,0_0_25px_#08f] transition-all duration-300 ease-in-out md:text-[15px] md:font-light font-light tracking-widest md:tracking-widest">
+        <Image src={img} alt={alt}/>
+        <h3 class="text-neutral-200 text-[18px] md:text-[16px] tracking-widest md:tracking-widest font-normal md:font-bold">{title}</h3>
+        <p class="font-normal md:font-normal text-neutral-500 text-sm mt-6 tracking-wide md:tracking-wide" >{description}</p>
+    </div>
+</section>
+
+<style>
+
+    *{
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+ 
+</style>

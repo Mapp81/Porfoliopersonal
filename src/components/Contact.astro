@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+
+import { Image } from "astro:assets";
+
+import ButtonWork from "./ButtonWork.astro";
+
+---
+<section id="contacto">
+<div class="p-10 md:p-36 container-header flex flex-col shrink-0">
+        <div>
+        <h1 class="mb-4 text-neutral-200 text-[30px] md:text-[50px] font-bold md:font-bold">Tu nuevo proyecto está a un paso de concretarse</h1>
+        <p class="mb-6 text-neutral-500 justify traking-wider md:tracking-wider text-xs md:text-[16px] md:text-justify leading-6 md:leading-6">Comunicate conmigo y contame tu idea...
+        </p>
+        </div>
+    
+        <ButtonWork label="CONTACTO" href="mailto:mapp81dev@gmail.com"/>
+            
+</div>
+</section>
+
+<style>
+    *{
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+ 
+</style>
+

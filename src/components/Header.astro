@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+
+import { Image } from "astro:assets";
+import pelolargo from "../assets/pelolargo.png";
+
+---
+
+
+<header class="header flex flex-col">
+    <!-- NAVBAR -->
+    <nav class="bg-black text-neutral-200 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo opcional -->
+        <div class="text-lg font-bold"></div>
+  
+        <!-- Botón hamburguesa (visible en móviles) -->
+        <button id="menu-btn" class="md:hidden text-neutral-200 text-2xl focus:outline-none">
+          &#9776;
+        </button>
+  
+        <!-- Menú de navegación -->
+        <ul id="menu"
+            class="hidden md:flex flex-col md:flex-row gap-4 text-[12px] font-bold md:items-center absolute md:static top-[10vh] right-0 bg-black md:bg-transparent p-6 md:p-0 z-50 w-full md:w-auto">
+          <li class="hover:scale-105 cursor-pointer"><a href="/">Home</a></li>
+          
+          <li class="hover:scale-105 cursor-pointer"><a href="#about">About me</a></li>
+          <li class="hover:scale-105 cursor-pointer"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<style>
+    *{
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    li{
+        list-style: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
+
+  
+</style>
+
+<script type="text/javascript">
+    // Script para el botón hamburguesa
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+  
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      menu.classList.add('items-end');
+    });
+
+</script>
+
+
+

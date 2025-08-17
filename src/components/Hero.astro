@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import bue from '../assets/bue.png';
+import bueedited from '../assets/bueedited.png';
+import ButtonWork from "./ButtonWork.astro";
+---
+
+<section
+class="">
+<div class="w-screen p-10 md:p-36 flex flex-row md:flex-row md:justify-center md:items-center md:gap-20 ">
+            
+    <div class="text-header md:w-xl">
+        
+        <h1 class="mb-4 bg-gradient-to-r from-sky-200 to-neutral-900 bg-clip-text text-transparent text-[38px] md:text-[70px] font-bold md:font-bold">FULL- STACK <br> DEVELOPER</h1>
+        <p class="mb-6 text-neutral-500 justify traking-wider md:tracking-wider text-[16px] md:text-[16px] md:text-justify leading-8 md:leading-8">Soy Ana <span class="text-sky-300 tracking-widest">web-developer</span> con enfoque en UX/ UI. Me entusiasma crear interfaces simples, atractivas y responsivas.</p> 
+        <ButtonWork label="GALERÍA" href="#Work"/>
+    </div>
+    <div class="img-header">
+        <div class="flex justify-end md:justify-center md:z-50 md:mb-0">
+            <Image src={bueedited} alt="Ana Peyran" class="absolute md:relative rounded-full w-24 h-24 md:w-100 md:h-100 object-cover hover:shadow-[0_0_1px_#fff,inset_0_0_3px_#08f,0_0_5px_#08f,0_0_10px_#08f,0_0_25px_#08f] transition-all duration-300 ease-in-out md:text-[15px] md:font-light font-light tracking-widest md:tracking-widest" />
+        </div>
+    
+</div> 
+</section>
+<style>
+
+    *{
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+   
+
+</style>
